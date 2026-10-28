@@ -1,0 +1,11 @@
+cat > .gitignore <<'EOF'
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+input.mp4
+output_annotated.mp4
+preview.jpg
+test_output/
+test_output_dnn/
+EOF
