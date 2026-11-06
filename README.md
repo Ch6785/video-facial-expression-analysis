@@ -6,27 +6,19 @@ Video Input → Frame Extraction → Face Detection → Expression Prediction �
 
 ## 2. Description
 
-The Video Facial Expression Analysis System analyzes video frames, detects human faces, predicts facial expressions using a pre-trained Hugging Face model, and generates an annotated video with a summary of predictions.
+The Video Facial Expression Analysis System analyzes video frames, detects human faces, predicts facial expressions using a pre-trained Hugging Face model, and generates a summary of the predictions.
 
 **Technologies Used:** Python, OpenCV, Hugging Face Transformers, PyTorch.
 
-## 3. Input / Output
+## 3. Output
 
-**Input:** `input.mp4` (approximately 2 minutes).
+### Output 1
 
-**Output:**
-- Annotated video: `output_frame_summary.mp4`
-- CSV report: `frame_emotion_summary.csv`
+![Output Screenshot 1](images/output1.png)
 
-### Output Screenshots
+### Output 2
 
-**Output 1**
-
-![Output Screenshot 1](images/output%201.png)
-
-**Output 2**
-
-![Output Screenshot 2](images/output%202.png)
+![Output Screenshot 2](images/output2.png)
 
 ## 4. Example Output
 
@@ -48,9 +40,3 @@ The Video Facial Expression Analysis System analyzes video frames, detects human
 **Total Face Predictions:** 2113
 
 **Processing Time:** 10.89 minutes
-
-*Note: Predictions are experimental and do not represent model accuracy.*
-
-## 5. GitHub Repository
-
-[Video Facial Expression Analysis](https://github.com/Ch6785/video-facial-expression-analysis)
