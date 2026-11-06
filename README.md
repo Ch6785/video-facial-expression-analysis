@@ -1,23 +1,56 @@
 # Video Facial Expression Analysis
 
-## Methodology
-- Python
-- OpenCV for face detection and video processing
-- Hugging Face Transformers for facial expression classification
-- Pretrained Vision Transformer (ViT) model
-- Frame sampling for efficient video analysis
+## 1. Methodology
 
-## Description
-This project analyzes a video to detect human faces and predict facial expressions such as happy, sad, angry, neutral, fear, and surprise. It processes video frames, identifies faces, classifies their expressions, and generates a summary of the predictions.
+Video Input → Frame Extraction → Face Detection → Expression Prediction → Frame Analysis → Result Generation
 
-## Input/Output
-**Input:** A video file (`input.mp4`), approximately 2 minutes long.
+## 2. Description
+
+The Video Facial Expression Analysis System analyzes video frames, detects human faces, predicts facial expressions using a pre-trained Hugging Face model, and generates an annotated video with a summary of predictions.
+
+**Technologies Used:** Python, OpenCV, Hugging Face Transformers, PyTorch.
+
+## 3. Input / Output
+
+**Input:** `input.mp4` (approximately 2 minutes).
 
 **Output:**
-- An annotated video (`output_annotated.mp4`) displaying detected faces, predicted expressions, and confidence scores.
-- A terminal summary showing the count of each predicted expression.
+- Annotated video: `output_frame_summary.mp4`
+- CSV report: `frame_emotion_summary.csv`
 
-The video is processed by analyzing every fifth frame to reduce processing time. The predictions are experimental and may not always be accurate.
+### Output Screenshots
 
-## Live Link
-Not deployed yet.
+**Output 1**
+
+![Output Screenshot 1](images/output%201.png)
+
+**Output 2**
+
+![Output Screenshot 2](images/output%202.png)
+
+## 4. Example Output
+
+**Frame-Level Summary:**
+- Happy = 561
+- Sad = 74
+- Neutral = 14
+- Uncertain = 595
+- No Face = 1600
+
+**Individual Face Predictions:**
+- Happy = 1096
+- Neutral = 66
+- Sad = 160
+- Uncertain = 791
+
+**Total Analyzed Frames:** 2844
+
+**Total Face Predictions:** 2113
+
+**Processing Time:** 10.89 minutes
+
+*Note: Predictions are experimental and do not represent model accuracy.*
+
+## 5. GitHub Repository
+
+[Video Facial Expression Analysis](https://github.com/Ch6785/video-facial-expression-analysis)
